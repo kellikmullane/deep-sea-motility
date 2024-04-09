@@ -376,11 +376,11 @@ legend <- function(a.gplot){
   a.gplot$grobs[[leg]]
 }
 
-legend <- legend(A2)
+Bottom_Legend <- legend(A2)
 
 # Then combine them all together
 
-combo <- grid.arrange(AA, BB, CC, legend, nrow = 4, layout_matrix = rbind(c(1), c(2), c(3), c(4)), heights = c(3, 3, 3, 0.5))
+combo <- grid.arrange(AA, BB, CC, Bottom_Legend, nrow = 4, layout_matrix = rbind(c(1), c(2), c(3), c(4)), heights = c(3, 3, 3, 0.5))
 
 # Save the final plots 
 
